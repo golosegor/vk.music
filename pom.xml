@@ -15,21 +15,28 @@
         <junit.version>4.12</junit.version>
         <assertj-core.version>3.1.0</assertj-core.version>
         <jsr311-api.version>1.1.1</jsr311-api.version>
+        <commons-io.version>2.4</commons-io.version>
+        <guava.version>18</guava.version>
+        <commons-lang.version>2.6</commons-lang.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>io.dropwizard</groupId>
-            <artifactId>dropwizard-testing</artifactId>
-            <version>0.8.2</version>
-            <scope>test</scope>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>jsr311-api</artifactId>
-            <version>${jsr311-api.version}</version>
-        </dependency>
         <!--jackson-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -48,6 +55,11 @@
         </dependency>
         <!--end jackson-->
         <!--feign-->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+            <version>${jsr311-api.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.netflix.feign</groupId>
             <artifactId>feign-jaxrs</artifactId>
@@ -79,6 +91,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-testing</artifactId>
+            <version>0.8.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>

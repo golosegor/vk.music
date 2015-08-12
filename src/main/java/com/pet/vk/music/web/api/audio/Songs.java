@@ -23,6 +23,10 @@ public class Songs {
     this.items = items;
   }
 
+  public List<SongInfo> songs() {
+    return items;
+  }
+
   @Override
   public String toString() {
     return "Songs{" +

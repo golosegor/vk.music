@@ -85,6 +85,46 @@ public class SongInfo {
         && Objects.equals(this.photo, other.photo);
   }
 
+  public Long getDate() {
+    return date;
+  }
+
+  public Integer getId() {
+    return id;
+  }
+
+  public Integer getOwnerId() {
+    return ownerId;
+  }
+
+  public String getArtist() {
+    return artist;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public Integer getDuration() {
+    return duration;
+  }
+
+  public String getUrl() {
+    return url;
+  }
+
+  public Integer getLyricsId() {
+    return lyricsId;
+  }
+
+  public Integer getGenreId() {
+    return genreId;
+  }
+
+  public String getPhoto() {
+    return photo;
+  }
+
   @Override
   public String toString() {
     return "SongInfo{" +
