@@ -1,0 +1,19 @@
+{
+  "response": {
+    "count": 1,
+    "items": [
+      {
+        "id": 1,
+        "owner_id": 1,
+        "artist": "Luther Blissett",
+        "title": "lb@example.com",
+        "duration": 1,
+        "date": 1439150460,
+        "url": "ss",
+        "genre_id": 1,
+        "lyrics_id": 1,
+        "photo": "pp"
+      }
+    ]
+  }
+}
