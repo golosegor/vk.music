@@ -8,6 +8,7 @@ import java.util.Objects;
     getterVisibility = JsonAutoDetect.Visibility.NONE,
     setterVisibility = JsonAutoDetect.Visibility.NONE,
     creatorVisibility = JsonAutoDetect.Visibility.NONE)
+@JsonIgnoreProperties(value = {"no_search"})
 public class SongInfo {
   @JsonProperty("date")
   private final Long date;
